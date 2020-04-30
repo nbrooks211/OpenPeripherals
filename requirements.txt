@@ -1,2 +1,3 @@
 hid
 pydbus
+pyqt5
