@@ -25,6 +25,17 @@ Currently OpenPeripherals only supports Linux, but Windows support is currently 
 ## Getting Started
 ### Linux:
 
+Begin by cloning the repository using git.
+
+`git clone https://github.com/QTechOfficial/OpenPeripherals.git`
+
+If you happen to not have git you can install it by running:
+
+| **Distro**    | **Command**            |
+|---------------|------------------------|
+| Debian/Ubuntu | `sudo apt install git` |
+| Arch/Manjaro  | `sudo pacman -S git`   |
+
 **Dependencies:**
 
 You will need to run the following commands to download the dependencies:
@@ -42,10 +53,21 @@ After those have installed, install the pip packages by running:
 | Debian < 9/Ubuntu < 18.04  | `pip3 install -r requirements.txt` |
 | Latest Arch/Latest Manjaro | `pip install -r requirements.txt`  |
 
-**Installation:**
-To install, simply clone the repository using git.
+**Running:**
+On first run do:
 
-`git clone https://github.com/QTechOfficial/OpenPeripherals.git`
+`sudo chmod 777 /dev/hidraw*`\
+`python /OpenPeripherals/backend/daemon.py`\
+`python /OpenPeripherals/ui/main.py`
+
+After the first run do:
+
+`python /OpenPeripherals/backend/daemon.py`\
+`python /OpenPeripherals/ui/main.py`
+
+
+***Note***
+The method showed above will not be in the final version and in the final version it will either be ran by one .py file on linux or an executable (.exe) file on windows.
 
 ## Hardware Support
 If your device is not on here, please submit a pull request!
