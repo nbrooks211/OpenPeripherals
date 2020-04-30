@@ -53,7 +53,7 @@ After those have installed, install the pip packages by running:
 | Debian < 9/Ubuntu < 18.04  | `pip3 install -r requirements.txt` |
 | Latest Arch/Latest Manjaro | `pip install -r requirements.txt`  |
 
-**Running:**
+**Running:**\
 On first run do:
 
 `sudo chmod 777 /dev/hidraw*`\
